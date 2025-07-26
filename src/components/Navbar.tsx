@@ -9,8 +9,8 @@ const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-black shadow-md w-full">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-4">
+    <nav className="absolute top-0 left-0 w-full z-50 bg-transparent px-6 py-4 flex items-center justify-between backdrop-blur-md">
+      <div className="max-w-7xl mx-auto flex items-center justify-between w-full">
         {/* Logo */}
         <Logo />
         {/* Nav Links - Center */}
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden flex items-center">
           <button
             aria-label="Open menu"
-            className="text-yellow-400 hover:text-white transition-colors cursor-pointer text-2xl focus:outline-none"
+            className="text-[#f7ca09] hover:text-white transition-colors cursor-pointer text-3xl focus:outline-none"
             onClick={() => setMobileOpen((prev) => !prev)}
           >
             <FiMenu />

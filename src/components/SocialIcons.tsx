@@ -23,7 +23,7 @@ const SocialIcons: React.FC = () => (
         target="_blank"
         rel="noopener noreferrer"
         aria-label={label}
-        className="text-yellow-400 hover:text-white transition-colors duration-200 cursor-pointer text-xl"
+        className="text-[#f7ca09] hover:text-white transition-colors duration-200 cursor-pointer text-xl"
       >
         {icon}
       </a>

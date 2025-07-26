@@ -10,7 +10,7 @@ interface MobileMenuProps {
 const MobileMenu: React.FC<MobileMenuProps> = ({ open, setOpen }) => {
   return (
     <div
-      className={`md:hidden fixed top-0 left-0 w-full bg-black z-40 transition-all duration-300 ease-in-out shadow-md ${open ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 pointer-events-none'} overflow-hidden`}
+      className={`md:hidden fixed top-0 left-0 w-full bg-[#2d333a] z-40 transition-all duration-300 ease-in-out shadow-md ${open ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 pointer-events-none'} overflow-hidden`}
       style={{ transitionProperty: 'max-height, opacity' }}
     >
       <div className="flex flex-col items-center py-6 space-y-6">
@@ -36,7 +36,7 @@ const NavLinksWrapper: React.FC<{ setOpen: (open: boolean) => void }> = ({ setOp
           <li key={link.name}>
             <a
               href={link.to}
-              className="text-yellow-400 hover:text-white transition-colors duration-200 cursor-pointer text-lg font-medium"
+              className="text-[#f7ca09] hover:text-white transition-colors duration-200 cursor-pointer text-lg font-medium"
               onClick={() => setOpen(false)}
             >
               {link.name}

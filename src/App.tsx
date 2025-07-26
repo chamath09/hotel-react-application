@@ -1,10 +1,12 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-
-const Placeholder = ({ name }: { name: string }) => (
-  <div className="text-white text-3xl flex justify-center items-center h-screen bg-black">{name} Page</div>
-);
+import About from './components/About';
+import Contact from './components/Contact';
+import Gallery from './components/Gallery';
+import Packages from './components/Packages';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,11 +14,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Placeholder name="About" />} />
-        <Route path="/contact" element={<Placeholder name="Contact" />} />
-        <Route path="/gallery" element={<Placeholder name="Gallery" />} />
-        <Route path="/packages" element={<Placeholder name="Packages" />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/packages" element={<Packages />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
