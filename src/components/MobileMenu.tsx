@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import NavLinks from './NavLinks';
 import SocialIcons from './SocialIcons';
 
@@ -34,13 +35,13 @@ const NavLinksWrapper: React.FC<{ setOpen: (open: boolean) => void }> = ({ setOp
       <ul className="flex flex-col space-y-4">
         {links.map((link) => (
           <li key={link.name}>
-            <a
-              href={link.to}
+            <Link
+              to={link.to}
               className="text-[#f7ca09] hover:text-white transition-colors duration-200 cursor-pointer text-lg font-medium"
               onClick={() => setOpen(false)}
             >
               {link.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

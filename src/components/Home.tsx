@@ -232,14 +232,14 @@ const Home: React.FC = () => {
       </section>
 
       {/* Contact Preview Section */}
-      <section className="py-16 md:py-24 px-4 bg-[#f2f2f2] text-[#2d333a]">
+      <section className="py-16 md:py-24 px-4 bg-[#2d333a] text-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-4xl md:text-5xl font-bold">
                 Get in <span className="text-[#f7ca09]">Touch</span>
               </h2>
-              <p className="text-lg text-[#3c454c] leading-relaxed">
+              <p className="text-lg text-gray-300 leading-relaxed">
                 We'd love to hear from you. Send us a message and we'll respond as soon as possible. 
                 Our team is here to help you plan your perfect stay.
               </p>
@@ -248,19 +248,19 @@ const Home: React.FC = () => {
                   <div className="bg-[#f7ca09] p-2 rounded-full">
                     <FaArrowRight className="text-[#2d333a] text-sm" />
                   </div>
-                  <span className="text-[#3c454c]">+1 (555) 123-4567</span>
+                  <span className="text-gray-300">+1 (555) 123-4567</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <div className="bg-[#f7ca09] p-2 rounded-full">
                     <FaArrowRight className="text-[#2d333a] text-sm" />
                   </div>
-                  <span className="text-[#3c454c]">info@luxuryhotel.com</span>
+                  <span className="text-gray-300">info@luxuryhotel.com</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <div className="bg-[#f7ca09] p-2 rounded-full">
                     <FaArrowRight className="text-[#2d333a] text-sm" />
                   </div>
-                  <span className="text-[#3c454c]">123 Luxury Avenue, Downtown</span>
+                  <span className="text-gray-300">123 Luxury Avenue, Downtown</span>
                 </div>
               </div>
               <Link
